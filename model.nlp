@@ -1,0 +1,1676 @@
+{
+  "settings": {
+    "languages": [
+      "id"
+    ],
+    "forceNER": true,
+    "tag": "nlp",
+    "threshold": 0.5,
+    "autoLoad": true,
+    "autoSave": true,
+    "modelFileName": "model.nlp",
+    "executeActionsBeforeAnswers": false,
+    "calculateSentiment": true
+  },
+  "nluManager": {
+    "settings": {
+      "tag": "nlu-manager"
+    },
+    "locales": [
+      "id"
+    ],
+    "languageNames": {},
+    "domainManagers": {
+      "id": {
+        "settings": {
+          "locale": "id",
+          "trainByDomain": false,
+          "tag": "domain-manager-id",
+          "nluByDomain": {
+            "default": {
+              "className": "NeuralNlu",
+              "settings": {}
+            }
+          },
+          "useStemDict": true
+        },
+        "stemDict": {
+          "halo": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "hi": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "hai": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "pagi,selamat": {
+            "intent": "greetings.morning",
+            "domain": "default"
+          },
+          "selamat,siang": {
+            "intent": "greetings.afternoon",
+            "domain": "default"
+          },
+          "malam,selamat": {
+            "intent": "greetings.evening",
+            "domain": "default"
+          },
+          "jumpa,sampa": {
+            "intent": "farewell.bye",
+            "domain": "default"
+          },
+          "selamat,tinggal": {
+            "intent": "farewell.bye",
+            "domain": "default"
+          },
+          "goodbye": {
+            "intent": "farewell.bye",
+            "domain": "default"
+          },
+          "apa,kabar": {
+            "intent": "conversation.howareyou",
+            "domain": "default"
+          },
+          "anda,bagaimana,hari": {
+            "intent": "conversation.howareyou",
+            "domain": "default"
+          },
+          "ada,baru,ita": {
+            "intent": "conversation.news",
+            "domain": "default"
+          },
+          "ada,arik,jadi,yang": {
+            "intent": "conversation.news",
+            "domain": "default"
+          },
+          "ada,apa,kabar": {
+            "intent": "conversation.news",
+            "domain": "default"
+          },
+          "ima,kasih": {
+            "intent": "gratitude.thanks",
+            "domain": "default"
+          },
+          "makasih": {
+            "intent": "gratitude.thanks",
+            "domain": "default"
+          },
+          "banyak,ima,kasih": {
+            "intent": "gratitude.thanks",
+            "domain": "default"
+          },
+          "bantu,bisa,saya": {
+            "intent": "assistance.help",
+            "domain": "default"
+          },
+          "tolong": {
+            "intent": "assistance.help",
+            "domain": "default"
+          },
+          "bantu,butuh,saya": {
+            "intent": "assistance.help",
+            "domain": "default"
+          },
+          "akhir,anda,apa,ini,pekan,rencana,untuk": {
+            "intent": "custom.weekendplans",
+            "domain": "default"
+          },
+          "anda,apa,laku,libur,saat,yang": {
+            "intent": "custom.holidays",
+            "domain": "default"
+          },
+          "anda,apa,favorit,giat": {
+            "intent": "custom.favoriteactivities",
+            "domain": "default"
+          },
+          "cuaca,hari,ini": {
+            "intent": "smalltalk.weather",
+            "domain": "default"
+          },
+          "bagaimana,cuaca,kondisi": {
+            "intent": "smalltalk.weather",
+            "domain": "default"
+          },
+          "belum,makan,sudah": {
+            "intent": "smalltalk.food",
+            "domain": "default"
+          },
+          "makan,sudah": {
+            "intent": "smalltalk.foodanswer",
+            "domain": "default"
+          },
+          "apa,makan,sudah": {
+            "intent": "smalltalk.foodanswer",
+            "domain": "default"
+          }
+        },
+        "intentDict": {
+          "greetings.hello": "default",
+          "greetings.morning": "default",
+          "greetings.afternoon": "default",
+          "greetings.evening": "default",
+          "farewell.bye": "default",
+          "conversation.howareyou": "default",
+          "conversation.news": "default",
+          "gratitude.thanks": "default",
+          "assistance.help": "default",
+          "custom.weekendplans": "default",
+          "custom.holidays": "default",
+          "custom.favoriteactivities": "default",
+          "smalltalk.weather": "default",
+          "smalltalk.food": "default",
+          "smalltalk.foodanswer": "default"
+        },
+        "sentences": [
+          {
+            "domain": "default",
+            "utterance": "halo",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "hi",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "hai",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "selamat pagi",
+            "intent": "greetings.morning"
+          },
+          {
+            "domain": "default",
+            "utterance": "selamat siang",
+            "intent": "greetings.afternoon"
+          },
+          {
+            "domain": "default",
+            "utterance": "selamat malam",
+            "intent": "greetings.evening"
+          },
+          {
+            "domain": "default",
+            "utterance": "sampai jumpa",
+            "intent": "farewell.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "selamat tinggal",
+            "intent": "farewell.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "goodbye",
+            "intent": "farewell.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "apa kabar",
+            "intent": "conversation.howareyou"
+          },
+          {
+            "domain": "default",
+            "utterance": "bagaimana hari Anda",
+            "intent": "conversation.howareyou"
+          },
+          {
+            "domain": "default",
+            "utterance": "ada berita terbaru",
+            "intent": "conversation.news"
+          },
+          {
+            "domain": "default",
+            "utterance": "ada yang menarik terjadi",
+            "intent": "conversation.news"
+          },
+          {
+            "domain": "default",
+            "utterance": "ada kabar apa",
+            "intent": "conversation.news"
+          },
+          {
+            "domain": "default",
+            "utterance": "terima kasih",
+            "intent": "gratitude.thanks"
+          },
+          {
+            "domain": "default",
+            "utterance": "makasih",
+            "intent": "gratitude.thanks"
+          },
+          {
+            "domain": "default",
+            "utterance": "terima kasih banyak",
+            "intent": "gratitude.thanks"
+          },
+          {
+            "domain": "default",
+            "utterance": "bisa bantu saya",
+            "intent": "assistance.help"
+          },
+          {
+            "domain": "default",
+            "utterance": "tolong",
+            "intent": "assistance.help"
+          },
+          {
+            "domain": "default",
+            "utterance": "saya butuh bantuan",
+            "intent": "assistance.help"
+          },
+          {
+            "domain": "default",
+            "utterance": "apa rencana Anda untuk akhir pekan ini",
+            "intent": "custom.weekendplans"
+          },
+          {
+            "domain": "default",
+            "utterance": "apa yang Anda lakukan saat liburan",
+            "intent": "custom.holidays"
+          },
+          {
+            "domain": "default",
+            "utterance": "apa kegiatan favorit Anda",
+            "intent": "custom.favoriteactivities"
+          },
+          {
+            "domain": "default",
+            "utterance": "cuaca hari ini",
+            "intent": "smalltalk.weather"
+          },
+          {
+            "domain": "default",
+            "utterance": "bagaimana kondisi cuaca",
+            "intent": "smalltalk.weather"
+          },
+          {
+            "domain": "default",
+            "utterance": "sudah makan belum",
+            "intent": "smalltalk.food"
+          },
+          {
+            "domain": "default",
+            "utterance": "sudah makan",
+            "intent": "smalltalk.foodanswer"
+          },
+          {
+            "domain": "default",
+            "utterance": "sudah makan apa",
+            "intent": "smalltalk.foodanswer"
+          }
+        ],
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "locale": "id",
+              "tag": "nlu-id",
+              "keepStopwords": true,
+              "nonefeatureValue": 1,
+              "nonedeltaMultiplier": 1.2,
+              "spellCheck": false,
+              "spellCheckDistance": 1,
+              "filterZeros": true,
+              "log": true
+            },
+            "features": {
+              "halo": 1,
+              "hi": 1,
+              "hai": 1,
+              "selamat": 1,
+              "pagi": 1,
+              "siang": 1,
+              "malam": 1,
+              "sampa": 1,
+              "jumpa": 1,
+              "tinggal": 1,
+              "goodbye": 1,
+              "apa": 1,
+              "kabar": 1,
+              "bagaimana": 1,
+              "hari": 1,
+              "anda": 1,
+              "ada": 1,
+              "ita": 1,
+              "baru": 1,
+              "yang": 1,
+              "arik": 1,
+              "jadi": 1,
+              "ima": 1,
+              "kasih": 1,
+              "makasih": 1,
+              "banyak": 1,
+              "bisa": 1,
+              "bantu": 1,
+              "saya": 1,
+              "tolong": 1,
+              "butuh": 1,
+              "rencana": 1,
+              "untuk": 1,
+              "akhir": 1,
+              "pekan": 1,
+              "ini": 1,
+              "laku": 1,
+              "saat": 1,
+              "libur": 1,
+              "giat": 1,
+              "favorit": 1,
+              "cuaca": 1,
+              "kondisi": 1,
+              "sudah": 1,
+              "makan": 1,
+              "belum": 1
+            },
+            "intents": {
+              "greetings.hello": 1,
+              "greetings.morning": 1,
+              "greetings.afternoon": 1,
+              "greetings.evening": 1,
+              "farewell.bye": 1,
+              "conversation.howareyou": 1,
+              "conversation.news": 1,
+              "gratitude.thanks": 1,
+              "assistance.help": 1,
+              "custom.weekendplans": 1,
+              "custom.holidays": 1,
+              "custom.favoriteactivities": 1,
+              "smalltalk.weather": 1,
+              "smalltalk.food": 1,
+              "smalltalk.foodanswer": 1
+            },
+            "intentFeatures": {
+              "greetings.hello": {
+                "halo": 1,
+                "hi": 1,
+                "hai": 1
+              },
+              "greetings.morning": {
+                "selamat": 1,
+                "pagi": 1
+              },
+              "greetings.afternoon": {
+                "selamat": 1,
+                "siang": 1
+              },
+              "greetings.evening": {
+                "selamat": 1,
+                "malam": 1
+              },
+              "farewell.bye": {
+                "sampa": 1,
+                "jumpa": 1,
+                "selamat": 1,
+                "tinggal": 1,
+                "goodbye": 1
+              },
+              "conversation.howareyou": {
+                "apa": 1,
+                "kabar": 1,
+                "bagaimana": 1,
+                "hari": 1,
+                "anda": 1
+              },
+              "conversation.news": {
+                "ada": 1,
+                "ita": 1,
+                "baru": 1,
+                "yang": 1,
+                "arik": 1,
+                "jadi": 1,
+                "kabar": 1,
+                "apa": 1
+              },
+              "gratitude.thanks": {
+                "ima": 1,
+                "kasih": 1,
+                "makasih": 1,
+                "banyak": 1
+              },
+              "assistance.help": {
+                "bisa": 1,
+                "bantu": 1,
+                "saya": 1,
+                "tolong": 1,
+                "butuh": 1
+              },
+              "custom.weekendplans": {
+                "apa": 1,
+                "rencana": 1,
+                "anda": 1,
+                "untuk": 1,
+                "akhir": 1,
+                "pekan": 1,
+                "ini": 1
+              },
+              "custom.holidays": {
+                "apa": 1,
+                "yang": 1,
+                "anda": 1,
+                "laku": 1,
+                "saat": 1,
+                "libur": 1
+              },
+              "custom.favoriteactivities": {
+                "apa": 1,
+                "giat": 1,
+                "favorit": 1,
+                "anda": 1
+              },
+              "smalltalk.weather": {
+                "cuaca": 1,
+                "hari": 1,
+                "ini": 1,
+                "bagaimana": 1,
+                "kondisi": 1
+              },
+              "smalltalk.food": {
+                "sudah": 1,
+                "makan": 1,
+                "belum": 1
+              },
+              "smalltalk.foodanswer": {
+                "sudah": 1,
+                "makan": 1,
+                "apa": 1
+              }
+            },
+            "featuresToIntent": {
+              "halo": [
+                "greetings.hello"
+              ],
+              "hi": [
+                "greetings.hello"
+              ],
+              "hai": [
+                "greetings.hello"
+              ],
+              "selamat": [
+                "greetings.morning",
+                "greetings.afternoon",
+                "greetings.evening",
+                "farewell.bye"
+              ],
+              "pagi": [
+                "greetings.morning"
+              ],
+              "siang": [
+                "greetings.afternoon"
+              ],
+              "malam": [
+                "greetings.evening"
+              ],
+              "sampa": [
+                "farewell.bye"
+              ],
+              "jumpa": [
+                "farewell.bye"
+              ],
+              "tinggal": [
+                "farewell.bye"
+              ],
+              "goodbye": [
+                "farewell.bye"
+              ],
+              "apa": [
+                "conversation.howareyou",
+                "conversation.news",
+                "custom.weekendplans",
+                "custom.holidays",
+                "custom.favoriteactivities",
+                "smalltalk.foodanswer"
+              ],
+              "kabar": [
+                "conversation.howareyou",
+                "conversation.news"
+              ],
+              "bagaimana": [
+                "conversation.howareyou",
+                "smalltalk.weather"
+              ],
+              "hari": [
+                "conversation.howareyou",
+                "smalltalk.weather"
+              ],
+              "anda": [
+                "conversation.howareyou",
+                "custom.weekendplans",
+                "custom.holidays",
+                "custom.favoriteactivities"
+              ],
+              "ada": [
+                "conversation.news"
+              ],
+              "ita": [
+                "conversation.news"
+              ],
+              "baru": [
+                "conversation.news"
+              ],
+              "yang": [
+                "conversation.news",
+                "custom.holidays"
+              ],
+              "arik": [
+                "conversation.news"
+              ],
+              "jadi": [
+                "conversation.news"
+              ],
+              "ima": [
+                "gratitude.thanks"
+              ],
+              "kasih": [
+                "gratitude.thanks"
+              ],
+              "makasih": [
+                "gratitude.thanks"
+              ],
+              "banyak": [
+                "gratitude.thanks"
+              ],
+              "bisa": [
+                "assistance.help"
+              ],
+              "bantu": [
+                "assistance.help"
+              ],
+              "saya": [
+                "assistance.help"
+              ],
+              "tolong": [
+                "assistance.help"
+              ],
+              "butuh": [
+                "assistance.help"
+              ],
+              "rencana": [
+                "custom.weekendplans"
+              ],
+              "untuk": [
+                "custom.weekendplans"
+              ],
+              "akhir": [
+                "custom.weekendplans"
+              ],
+              "pekan": [
+                "custom.weekendplans"
+              ],
+              "ini": [
+                "custom.weekendplans",
+                "smalltalk.weather"
+              ],
+              "laku": [
+                "custom.holidays"
+              ],
+              "saat": [
+                "custom.holidays"
+              ],
+              "libur": [
+                "custom.holidays"
+              ],
+              "giat": [
+                "custom.favoriteactivities"
+              ],
+              "favorit": [
+                "custom.favoriteactivities"
+              ],
+              "cuaca": [
+                "smalltalk.weather"
+              ],
+              "kondisi": [
+                "smalltalk.weather"
+              ],
+              "sudah": [
+                "smalltalk.food",
+                "smalltalk.foodanswer"
+              ],
+              "makan": [
+                "smalltalk.food",
+                "smalltalk.foodanswer"
+              ],
+              "belum": [
+                "smalltalk.food"
+              ]
+            },
+            "neuralNetwork": {
+              "settings": {
+                "locale": "id",
+                "tag": "nlu-id",
+                "keepStopwords": true,
+                "nonefeatureValue": 1,
+                "nonedeltaMultiplier": 1.2,
+                "spellCheck": false,
+                "spellCheckDistance": 1,
+                "filterZeros": true,
+                "log": true
+              },
+              "features": [
+                "halo",
+                "hi",
+                "hai",
+                "selamat",
+                "pagi",
+                "siang",
+                "malam",
+                "sampa",
+                "jumpa",
+                "tinggal",
+                "goodbye",
+                "apa",
+                "kabar",
+                "bagaimana",
+                "hari",
+                "anda",
+                "ada",
+                "ita",
+                "baru",
+                "yang",
+                "arik",
+                "jadi",
+                "ima",
+                "kasih",
+                "makasih",
+                "banyak",
+                "bisa",
+                "bantu",
+                "saya",
+                "tolong",
+                "butuh",
+                "rencana",
+                "untuk",
+                "akhir",
+                "pekan",
+                "ini",
+                "laku",
+                "saat",
+                "libur",
+                "giat",
+                "favorit",
+                "cuaca",
+                "kondisi",
+                "sudah",
+                "makan",
+                "belum"
+              ],
+              "intents": [
+                "greetings.hello",
+                "greetings.morning",
+                "greetings.afternoon",
+                "greetings.evening",
+                "farewell.bye",
+                "conversation.howareyou",
+                "conversation.news",
+                "gratitude.thanks",
+                "assistance.help",
+                "custom.weekendplans",
+                "custom.holidays",
+                "custom.favoriteactivities",
+                "smalltalk.weather",
+                "smalltalk.food",
+                "smalltalk.foodanswer"
+              ],
+              "perceptrons": [
+                [
+                  10.783145904541016,
+                  10.780460357666016,
+                  10.774275779724121,
+                  -2.8303236961364746,
+                  -0.748007595539093,
+                  -0.7152397632598877,
+                  -0.6923900842666626,
+                  -1.7496509552001953,
+                  -1.7496509552001953,
+                  -0.6688770651817322,
+                  -3.479379892349243,
+                  -1.9656728506088257,
+                  -1.5284581184387207,
+                  -1.3304930925369263,
+                  -1.2847074270248413,
+                  -1.006374478340149,
+                  -1.660613775253296,
+                  -0.9155758619308472,
+                  -0.9155758619308472,
+                  -0.6508044600486755,
+                  -0.5902585983276367,
+                  -0.5902585983276367,
+                  -1.745612621307373,
+                  -1.745612621307373,
+                  -3.4743406772613525,
+                  -0.43704938888549805,
+                  -0.7213656902313232,
+                  -1.4034284353256226,
+                  -1.4034284353256226,
+                  -3.4700520038604736,
+                  -0.6814215183258057,
+                  -0.07053568959236145,
+                  -0.07053568959236145,
+                  -0.07053568959236145,
+                  -0.07053568959236145,
+                  -0.7804067134857178,
+                  -0.053580254316329956,
+                  -0.053580254316329956,
+                  -0.053580254316329956,
+                  -0.25818610191345215,
+                  -0.25818610191345215,
+                  -1.4232943058013916,
+                  -0.7345215678215027,
+                  -1.7437838315963745,
+                  -1.7437838315963745,
+                  -0.5445189476013184,
+                  3.4885596883407044
+                ],
+                [
+                  -0.21118062734603882,
+                  -0.21104086935520172,
+                  -0.21088622510433197,
+                  2.6868903636932373,
+                  11.363747596740723,
+                  -2.8947534561157227,
+                  -2.8934874534606934,
+                  -0.16277924180030823,
+                  -0.16277924180030823,
+                  -2.8893351554870605,
+                  -0.21161465346813202,
+                  -0.16293244063854218,
+                  -0.10670205950737,
+                  -0.1142798513174057,
+                  -0.11087872087955475,
+                  -0.11180359125137329,
+                  -0.15881462395191193,
+                  -0.06932809948921204,
+                  -0.06932809948921204,
+                  -0.06499778479337692,
+                  -0.050162624567747116,
+                  -0.050162624567747116,
+                  -0.13116410374641418,
+                  -0.13116410374641418,
+                  -0.2114812582731247,
+                  -0.04520637169480324,
+                  -0.05964852496981621,
+                  -0.11347586661577225,
+                  -0.11347586661577225,
+                  -0.2113749384880066,
+                  -0.04638877511024475,
+                  -0.01419482845813036,
+                  -0.01419482845813036,
+                  -0.01419482845813036,
+                  -0.01419482845813036,
+                  -0.06372052431106567,
+                  -0.009511672891676426,
+                  -0.009511672891676426,
+                  -0.009511672891676426,
+                  -0.013316655531525612,
+                  -0.013316655531525612,
+                  -0.09744744002819061,
+                  -0.047941576689481735,
+                  -0.11840775609016418,
+                  -0.11840775609016418,
+                  -0.048780109733343124,
+                  0.21156879852856628
+                ],
+                [
+                  -0.19789329171180725,
+                  -0.19781355559825897,
+                  -0.19772176444530487,
+                  2.6987881660461426,
+                  -2.8849923610687256,
+                  11.36638069152832,
+                  -2.892078399658203,
+                  -0.1730235368013382,
+                  -0.1730235368013382,
+                  -2.8907649517059326,
+                  -0.20473860204219818,
+                  -0.18149341642856598,
+                  -0.11614888161420822,
+                  -0.12626011669635773,
+                  -0.12507125735282898,
+                  -0.12706249952316284,
+                  -0.1771136075258255,
+                  -0.07195776700973511,
+                  -0.07195776700973511,
+                  -0.07379346340894699,
+                  -0.05684293806552887,
+                  -0.05684293806552887,
+                  -0.14727827906608582,
+                  -0.14727827906608582,
+                  -0.1992255002260208,
+                  -0.05125269293785095,
+                  -0.06719516217708588,
+                  -0.12756754457950592,
+                  -0.12756754457950592,
+                  -0.19814658164978027,
+                  -0.05222976207733154,
+                  -0.016199439764022827,
+                  -0.016199439764022827,
+                  -0.016199439764022827,
+                  -0.016199439764022827,
+                  -0.07200280576944351,
+                  -0.01085719745606184,
+                  -0.01085719745606184,
+                  -0.01085719745606184,
+                  -0.015126182697713375,
+                  -0.015126182697713375,
+                  -0.1072973906993866,
+                  -0.05066750571131706,
+                  -0.12975431978702545,
+                  -0.12975431978702545,
+                  -0.05493714287877083,
+                  0.19794271776687242
+                ],
+                [
+                  -0.1849803924560547,
+                  -0.1827140599489212,
+                  -0.18041685223579407,
+                  2.7230091094970703,
+                  -2.883774757385254,
+                  -2.879119396209717,
+                  11.372262954711914,
+                  -0.1881762593984604,
+                  -0.1881762593984604,
+                  -2.8861782550811768,
+                  -0.20977453887462616,
+                  -0.20461300015449524,
+                  -0.13052748143672943,
+                  -0.1418066918849945,
+                  -0.14041396975517273,
+                  -0.14356152713298798,
+                  -0.19976834952831268,
+                  -0.08109812438488007,
+                  -0.08109812438488007,
+                  -0.08327416330575943,
+                  -0.06404893100261688,
+                  -0.06404893100261688,
+                  -0.1620299369096756,
+                  -0.1620299369096756,
+                  -0.19817498326301575,
+                  -0.05775592848658562,
+                  -0.06919857114553452,
+                  -0.14143013954162598,
+                  -0.14143013954162598,
+                  -0.19305257499217987,
+                  -0.0588122233748436,
+                  -0.01831669919192791,
+                  -0.01831669919192791,
+                  -0.01831669919192791,
+                  -0.01831669919192791,
+                  -0.08089639991521835,
+                  -0.012282864190638065,
+                  -0.012282864190638065,
+                  -0.012282864190638065,
+                  -0.017083225771784782,
+                  -0.017083225771784782,
+                  -0.11992908269166946,
+                  -0.0567435547709465,
+                  -0.14201316237449646,
+                  -0.14201316237449646,
+                  -0.06154220923781395,
+                  0.16825729702335304
+                ],
+                [
+                  -1.9462261199951172,
+                  -1.9445433616638184,
+                  -1.9427025318145752,
+                  1.2973650693893433,
+                  -3.2426490783691406,
+                  -3.240893840789795,
+                  -3.2361228466033936,
+                  6.168819427490234,
+                  6.168819427490234,
+                  11.01787281036377,
+                  12.306588172912598,
+                  -1.1880791187286377,
+                  -0.8697576522827148,
+                  -0.8294517993927002,
+                  -0.7961264252662659,
+                  -0.7090198397636414,
+                  -1.0659452676773071,
+                  -0.5352978110313416,
+                  -0.5352978110313416,
+                  -0.4212070107460022,
+                  -0.3584316372871399,
+                  -0.3584316372871399,
+                  -1.0259453058242798,
+                  -1.0259453058242798,
+                  -1.9497721195220947,
+                  -0.3213033676147461,
+                  -0.447914719581604,
+                  -0.8282131552696228,
+                  -0.8282131552696228,
+                  -1.9484949111938477,
+                  -0.36760348081588745,
+                  -0.0767485648393631,
+                  -0.0767485648393631,
+                  -0.0767485648393631,
+                  -0.0767485648393631,
+                  -0.4643282890319824,
+                  -0.04016799107193947,
+                  -0.04016799107193947,
+                  -0.04016799107193947,
+                  -0.12377601861953735,
+                  -0.12377601861953735,
+                  -0.7797048687934875,
+                  -0.4034286439418793,
+                  -0.9899300336837769,
+                  -0.9899300336837769,
+                  -0.37082043290138245,
+                  1.9514625136924144
+                ],
+                [
+                  -0.577138364315033,
+                  -0.5756106972694397,
+                  -0.5740384459495544,
+                  -0.47352051734924316,
+                  -0.11925510317087173,
+                  -0.11866329610347748,
+                  -0.1180640161037445,
+                  -0.2933885157108307,
+                  -0.2933885157108307,
+                  -0.11682865023612976,
+                  -0.570976972579956,
+                  2.937523603439331,
+                  9.787184715270996,
+                  5.4201436042785645,
+                  5.833916187286377,
+                  2.351646900177002,
+                  -12.761651992797852,
+                  -0.17198364436626434,
+                  -0.17198364436626434,
+                  -1.5792901515960693,
+                  -0.10645139217376709,
+                  -0.10645139217376709,
+                  -0.36660903692245483,
+                  -0.36660903692245483,
+                  -0.5962070822715759,
+                  -0.12260933965444565,
+                  -0.16463924944400787,
+                  -0.3181072771549225,
+                  -0.3181072771549225,
+                  -0.5954368710517883,
+                  -0.1282455325126648,
+                  -0.8362554907798767,
+                  -0.8362554907798767,
+                  -0.8362554907798767,
+                  -0.8362554907798767,
+                  -2.563079357147217,
+                  -1.438576340675354,
+                  -1.438576340675354,
+                  -1.438576340675354,
+                  -2.9297521114349365,
+                  -2.9297521114349365,
+                  -3.8659374713897705,
+                  -2.1391732692718506,
+                  -1.7368006706237793,
+                  -1.7368006706237793,
+                  -0.05127064883708954,
+                  0.5976273873480215
+                ],
+                [
+                  -0.3625199794769287,
+                  -0.35141462087631226,
+                  -0.34062471985816956,
+                  -0.5451233983039856,
+                  -0.14519333839416504,
+                  -0.13076941668987274,
+                  -0.116549551486969,
+                  -0.23655195534229279,
+                  -0.23655195534229279,
+                  -0.09611198306083679,
+                  -0.3170299828052521,
+                  0.114772267639637,
+                  1.6986345052719116,
+                  -0.19189761579036713,
+                  -0.13920724391937256,
+                  -1.194559931755066,
+                  13.000287055969238,
+                  1.2918215990066528,
+                  1.2918215990066528,
+                  0.37335917353630066,
+                  1.0756102800369263,
+                  1.0756102800369263,
+                  -0.4557527005672455,
+                  -0.4557527005672455,
+                  -0.4592117965221405,
+                  -0.15226741135120392,
+                  -0.20887207984924316,
+                  -0.4148067533969879,
+                  -0.4148067533969879,
+                  -0.43218696117401123,
+                  -0.16319000720977783,
+                  -0.2076411247253418,
+                  -0.2076411247253418,
+                  -0.2076411247253418,
+                  -0.2076411247253418,
+                  -0.40090200304985046,
+                  -0.6226494908332825,
+                  -0.6226494908332825,
+                  -0.6226494908332825,
+                  -0.23517541587352753,
+                  -0.23517541587352753,
+                  -0.3627239465713501,
+                  -0.19189761579036713,
+                  -0.5735774636268616,
+                  -0.5735774636268616,
+                  -0.1011306568980217,
+                  -1.1144892338168655
+                ],
+                [
+                  -1.7267078161239624,
+                  -1.7250419855117798,
+                  -1.7232400178909302,
+                  -1.388368844985962,
+                  -0.3545612692832947,
+                  -0.3449237048625946,
+                  -0.34455275535583496,
+                  -0.865864634513855,
+                  -0.865864634513855,
+                  -0.34369462728500366,
+                  -1.7203309535980225,
+                  -1.177282452583313,
+                  -0.5533574819564819,
+                  -0.5527688264846802,
+                  -0.4987892508506775,
+                  -0.6799671053886414,
+                  -0.7699517011642456,
+                  -0.48088303208351135,
+                  -0.48088303208351135,
+                  -0.435751736164093,
+                  -0.263166218996048,
+                  -0.263166218996048,
+                  6.203373908996582,
+                  6.203373908996582,
+                  12.51966667175293,
+                  0.24138164520263672,
+                  -0.38667595386505127,
+                  -0.7221247553825378,
+                  -0.7221247553825378,
+                  -1.7292512655258179,
+                  -0.3005545139312744,
+                  -0.14076074957847595,
+                  -0.14076074957847595,
+                  -0.14076074957847595,
+                  -0.14076074957847595,
+                  -0.529784619808197,
+                  -0.13399094343185425,
+                  -0.13399094343185425,
+                  -0.13399094343185425,
+                  -0.18474480509757996,
+                  -0.18474480509757996,
+                  -0.796259343624115,
+                  -0.4249146282672882,
+                  -0.8669729232788086,
+                  -0.8669729232788086,
+                  -0.30238476395606995,
+                  1.7348010711697268
+                ],
+                [
+                  -1.6193236112594604,
+                  -1.6181254386901855,
+                  -1.6168041229248047,
+                  -1.3073712587356567,
+                  -0.3379186689853668,
+                  -0.3270767629146576,
+                  -0.3184944689273834,
+                  -0.8107617497444153,
+                  -0.8107617497444153,
+                  -0.3141445219516754,
+                  -1.6147805452346802,
+                  -1.1423819065093994,
+                  -0.47859007120132446,
+                  -0.4977831244468689,
+                  -0.4560873508453369,
+                  -0.667255163192749,
+                  -0.7182905673980713,
+                  -0.4514278173446655,
+                  -0.4514278173446655,
+                  -0.42583420872688293,
+                  -0.2385343760251999,
+                  -0.2385343760251999,
+                  -0.8104541897773743,
+                  -0.8104541897773743,
+                  -1.6123244762420654,
+                  -0.2076287865638733,
+                  2.536250591278076,
+                  5.06578254699707,
+                  5.06578254699707,
+                  12.63747787475586,
+                  2.529627799987793,
+                  -0.15417081117630005,
+                  -0.15417081117630005,
+                  -0.15417081117630005,
+                  -0.15417081117630005,
+                  -0.5402011275291443,
+                  -0.14709627628326416,
+                  -0.14709627628326416,
+                  -0.14709627628326416,
+                  -0.17643700540065765,
+                  -0.17643700540065765,
+                  -0.783907949924469,
+                  -0.4054533541202545,
+                  -0.8224751949310303,
+                  -0.8224751949310303,
+                  -0.2979291081428528,
+                  1.6220223549860147
+                ],
+                [
+                  -0.02480749785900116,
+                  -0.02379450760781765,
+                  -0.02282286062836647,
+                  -0.08521891385316849,
+                  -0.01907298155128956,
+                  -0.01717025600373745,
+                  -0.015209858305752277,
+                  -0.019320044666528702,
+                  -0.019320044666528702,
+                  -0.012552625499665737,
+                  -0.018497789278626442,
+                  0.6366897821426392,
+                  -0.4326425790786743,
+                  -0.2640618085861206,
+                  -0.9524161219596863,
+                  1.0838732719421387,
+                  -0.15897922217845917,
+                  -0.005315782502293587,
+                  -0.005315782502293587,
+                  -0.5190672278404236,
+                  -0.0008894443744793534,
+                  -0.0008894443744793534,
+                  -0.008357030339539051,
+                  -0.008357030339539051,
+                  -0.003494506934657693,
+                  -0.0029860015492886305,
+                  -0.0031818163115531206,
+                  -0.007378995884209871,
+                  -0.007378995884209871,
+                  -0.00309100653976202,
+                  -0.0026420934591442347,
+                  2.7240898609161377,
+                  2.7240898609161377,
+                  2.7240898609161377,
+                  2.7240898609161377,
+                  2.022829055786133,
+                  -0.5149178504943848,
+                  -0.5149178504943848,
+                  -0.5149178504943848,
+                  -0.7724120616912842,
+                  -0.7724120616912842,
+                  -0.7211714386940002,
+                  -0.014894678257405758,
+                  -0.29883643984794617,
+                  -0.29883643984794617,
+                  -0.016231000423431396,
+                  -0.35403711532761595
+                ],
+                [
+                  -0.045204292982816696,
+                  -0.04342304542660713,
+                  -0.04171178117394447,
+                  -0.12567824125289917,
+                  -0.027662575244903564,
+                  -0.02493913471698761,
+                  -0.022107526659965515,
+                  -0.02773243375122547,
+                  -0.02773243375122547,
+                  -0.018262945115566254,
+                  -0.03427360579371452,
+                  0.9307538866996765,
+                  -0.5533864498138428,
+                  -0.49595701694488525,
+                  -0.49255821108818054,
+                  1.3502116203308105,
+                  -0.8555763959884644,
+                  -0.007807834539562464,
+                  -0.007807834539562464,
+                  2.5855300426483154,
+                  -0.677116870880127,
+                  -0.677116870880127,
+                  -0.010301236994564533,
+                  -0.010301236994564533,
+                  -0.004308441653847694,
+                  -0.003680662950500846,
+                  -0.0039223479107022285,
+                  -0.00909565668553114,
+                  -0.00909565668553114,
+                  -0.0038110334426164627,
+                  -0.0032568268943578005,
+                  -0.44419199228286743,
+                  -0.44419199228286743,
+                  -0.44419199228286743,
+                  -0.44419199228286743,
+                  -0.49448853731155396,
+                  3.279641628265381,
+                  3.279641628265381,
+                  3.279641628265381,
+                  -0.9634062647819519,
+                  -0.9634062647819519,
+                  -0.08620814234018326,
+                  -0.03647977113723755,
+                  -0.3671411871910095,
+                  -0.3671411871910095,
+                  -0.03244442120194435,
+                  -0.4197063000524606
+                ],
+                [
+                  -0.07799671590328217,
+                  -0.0750284269452095,
+                  -0.07217234373092651,
+                  -0.1772901862859726,
+                  -0.044758692383766174,
+                  -0.04016929864883423,
+                  -0.035597063601017,
+                  -0.05900859087705612,
+                  -0.05900859087705612,
+                  -0.02372198924422264,
+                  -0.06105944886803627,
+                  1.5632692575454712,
+                  -1.3302593231201172,
+                  -1.1123677492141724,
+                  -1.109809160232544,
+                  2.4551591873168945,
+                  -0.41488805413246155,
+                  -0.017661670222878456,
+                  -0.017661670222878456,
+                  -0.9802666306495667,
+                  -0.009289405308663845,
+                  -0.009289405308663845,
+                  -0.03132565692067146,
+                  -0.03132565692067146,
+                  -0.019847506657242775,
+                  -0.011200868524610996,
+                  -0.012547183781862259,
+                  -0.02763659507036209,
+                  -0.02763659507036209,
+                  -0.01792765036225319,
+                  -0.010072712786495686,
+                  -0.7559562921524048,
+                  -0.7559562921524048,
+                  -0.7559562921524048,
+                  -0.7559562921524048,
+                  -0.82232266664505,
+                  -0.9623300433158875,
+                  -0.9623300433158875,
+                  -0.9623300433158875,
+                  5.250119686126709,
+                  5.250119686126709,
+                  -0.11191560328006744,
+                  -0.04665178060531616,
+                  -0.7118171453475952,
+                  -0.7118171453475952,
+                  -0.04277621582150459,
+                  -0.23297160977786008
+                ],
+                [
+                  -0.4296497702598572,
+                  -0.4223124086856842,
+                  -0.41207027435302734,
+                  -0.6175360083580017,
+                  -0.1498006135225296,
+                  -0.15044650435447693,
+                  -0.13388493657112122,
+                  -0.276225745677948,
+                  -0.276225745677948,
+                  -0.11026140302419662,
+                  -0.3921533226966858,
+                  -0.5654557943344116,
+                  -0.17663957178592682,
+                  1.3198628425598145,
+                  1.4671344757080078,
+                  -3.1386165618896484,
+                  -0.2721279263496399,
+                  -0.12122322618961334,
+                  -0.12122322618961334,
+                  -0.09345125406980515,
+                  -0.08807320147752762,
+                  -0.08807320147752762,
+                  -0.23200559616088867,
+                  -0.23200559616088867,
+                  -0.351725310087204,
+                  -0.08385610580444336,
+                  -0.10230136662721634,
+                  -0.19927804172039032,
+                  -0.19927804172039032,
+                  -0.3515222370624542,
+                  -0.07982704043388367,
+                  -0.2562979459762573,
+                  -0.2562979459762573,
+                  -0.2562979459762573,
+                  -0.2562979459762573,
+                  4.008391857147217,
+                  -0.0024403189308941364,
+                  -0.0024403189308941364,
+                  -0.0024403189308941364,
+                  -0.0017080595716834068,
+                  -0.0017080595716834068,
+                  8.458574295043945,
+                  4.155653953552246,
+                  -0.43688976764678955,
+                  -0.43688976764678955,
+                  -0.15678171813488007,
+                  0.35161073896646555
+                ],
+                [
+                  -0.11093269288539886,
+                  -0.10734061151742935,
+                  -0.10641549527645111,
+                  -0.19094817340373993,
+                  -0.04685414582490921,
+                  -0.0420975461602211,
+                  -0.03731890022754669,
+                  -0.07274912297725677,
+                  -0.07274912297725677,
+                  -0.030730802565813065,
+                  -0.09549781680107117,
+                  -2.6373579502105713,
+                  -0.015626106411218643,
+                  -0.07916314899921417,
+                  -0.08215987682342529,
+                  -0.04036958888173103,
+                  -0.0963185653090477,
+                  -0.04630883038043976,
+                  -0.04630883038043976,
+                  -0.034131765365600586,
+                  -0.034131765365600586,
+                  -0.034131765365600586,
+                  -0.08248168230056763,
+                  -0.08248168230056763,
+                  -0.08856752514839172,
+                  -0.02805282361805439,
+                  -0.03791115805506706,
+                  -0.07450162619352341,
+                  -0.07450162619352341,
+                  -0.0839613676071167,
+                  -0.02958199381828308,
+                  -0.000027069423595094122,
+                  -0.000027069423595094122,
+                  -0.000027069423595094122,
+                  -0.000027069423595094122,
+                  -0.030604703351855278,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.06420350074768066,
+                  -0.02770012430846691,
+                  0.43935099244117737,
+                  0.43935099244117737,
+                  13.445354461669922,
+                  -0.43364531583208876
+                ],
+                [
+                  -0.2469852715730667,
+                  -0.24426327645778656,
+                  -0.23851901292800903,
+                  -0.4165450632572174,
+                  -0.0975145623087883,
+                  -0.08774499595165253,
+                  -0.07778111845254898,
+                  -0.1574258655309677,
+                  -0.1574258655309677,
+                  -0.0641293153166771,
+                  -0.22643429040908813,
+                  1.181657075881958,
+                  -2.3243188858032227,
+                  -0.11888888478279114,
+                  -0.06716804951429367,
+                  -1.2396323680877686,
+                  -0.6942963600158691,
+                  -0.06481844186782837,
+                  -0.06481844186782837,
+                  -0.3576287031173706,
+                  -0.0365818627178669,
+                  -0.0365818627178669,
+                  -0.15468363463878632,
+                  -0.15468363463878632,
+                  -0.21442437171936035,
+                  -0.056988418102264404,
+                  -0.0677158534526825,
+                  -0.13613948225975037,
+                  -0.13613948225975037,
+                  -0.2121853083372116,
+                  -0.05307275429368019,
+                  -0.2519693374633789,
+                  -0.2519693374633789,
+                  -0.2519693374633789,
+                  -0.2519693374633789,
+                  -0.26825326681137085,
+                  -0.29903364181518555,
+                  -0.29903364181518555,
+                  -0.29903364181518555,
+                  -0.6140767931938171,
+                  -0.6140767931938171,
+                  -0.06723407655954361,
+                  -0.0560380220413208,
+                  6.589311599731445,
+                  6.589311599731445,
+                  -12.99258804321289,
+                  0.2462209887518996
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "intentDomains": {},
+    "extraSentences": [
+      [
+        "id",
+        "halo"
+      ],
+      [
+        "id",
+        "hi"
+      ],
+      [
+        "id",
+        "hai"
+      ],
+      [
+        "id",
+        "selamat pagi"
+      ],
+      [
+        "id",
+        "selamat siang"
+      ],
+      [
+        "id",
+        "selamat malam"
+      ],
+      [
+        "id",
+        "sampai jumpa"
+      ],
+      [
+        "id",
+        "selamat tinggal"
+      ],
+      [
+        "id",
+        "goodbye"
+      ],
+      [
+        "id",
+        "apa kabar"
+      ],
+      [
+        "id",
+        "bagaimana hari Anda"
+      ],
+      [
+        "id",
+        "ada berita terbaru"
+      ],
+      [
+        "id",
+        "ada yang menarik terjadi"
+      ],
+      [
+        "id",
+        "ada kabar apa"
+      ],
+      [
+        "id",
+        "terima kasih"
+      ],
+      [
+        "id",
+        "makasih"
+      ],
+      [
+        "id",
+        "terima kasih banyak"
+      ],
+      [
+        "id",
+        "bisa bantu saya"
+      ],
+      [
+        "id",
+        "tolong"
+      ],
+      [
+        "id",
+        "saya butuh bantuan"
+      ],
+      [
+        "id",
+        "apa rencana Anda untuk akhir pekan ini"
+      ],
+      [
+        "id",
+        "apa yang Anda lakukan saat liburan"
+      ],
+      [
+        "id",
+        "apa kegiatan favorit Anda"
+      ],
+      [
+        "id",
+        "cuaca hari ini"
+      ],
+      [
+        "id",
+        "bagaimana kondisi cuaca"
+      ],
+      [
+        "id",
+        "sudah makan belum"
+      ],
+      [
+        "id",
+        "sudah makan"
+      ],
+      [
+        "id",
+        "sudah makan apa"
+      ]
+    ]
+  },
+  "ner": {
+    "settings": {
+      "tag": "ner",
+      "entityPreffix": "%",
+      "entitySuffix": "%"
+    },
+    "rules": {}
+  },
+  "nlgManager": {
+    "settings": {
+      "tag": "nlg-manager"
+    },
+    "responses": {
+      "id": {
+        "greetings.hello": [
+          {
+            "answer": "Halo! Bagaimana saya bisa membantu Anda hari ini?"
+          }
+        ],
+        "greetings.morning": [
+          {
+            "answer": "Selamat pagi! Apa kabar?"
+          }
+        ],
+        "greetings.afternoon": [
+          {
+            "answer": "Selamat siang! Ada yang bisa saya bantu?"
+          }
+        ],
+        "greetings.evening": [
+          {
+            "answer": "Selamat malam! Bagaimana hari Anda?"
+          }
+        ],
+        "farewell.bye": [
+          {
+            "answer": "Sampai jumpa lagi! Semoga hari Anda menyenangkan."
+          }
+        ],
+        "conversation.howareyou": [
+          {
+            "answer": "Saya baik, terima kasih! Bagaimana dengan Anda?"
+          }
+        ],
+        "conversation.news": [
+          {
+            "answer": "Tidak ada berita terbaru yang menarik, tetapi saya siap membantu Anda."
+          }
+        ],
+        "gratitude.thanks": [
+          {
+            "answer": "Sama-sama! Senang bisa membantu."
+          }
+        ],
+        "assistance.help": [
+          {
+            "answer": "Tentu saja, apa yang bisa saya bantu?"
+          }
+        ],
+        "custom.weekendplans": [
+          {
+            "answer": "Saya belum membuat rencana pasti untuk akhir pekan ini."
+          }
+        ],
+        "custom.holidays": [
+          {
+            "answer": "Saat liburan, saya suka bersantai dan mengeksplorasi tempat baru."
+          }
+        ],
+        "custom.favoriteactivities": [
+          {
+            "answer": "Kegiatan favorit saya adalah membaca buku dan bermain musik."
+          }
+        ],
+        "smalltalk.weather": [
+          {
+            "answer": "Cuaca hari ini terlihat cerah!"
+          }
+        ],
+        "smalltalk.food": [
+          {
+            "answer": "Saya belum makan, Anda sudah?"
+          }
+        ],
+        "smalltalk.foodanswer": [
+          {
+            "answer": "Sudah makan apa tadi?"
+          }
+        ]
+      }
+    }
+  },
+  "actionManager": {
+    "settings": {
+      "tag": "action-manager"
+    },
+    "actions": {}
+  },
+  "slotManager": {}
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1><%= title %></h1>
+      </header>
+      <main>
+        <div id="chat-box"><%- include('chat') %></div>
+      </main>
+      <footer>
+        <div id="input-box">
+          <form action="/send-message" method="post" class="form-input">
+            <input
+              type="text"
+              name="message"
+              id="messageInput"
+              placeholder="Type your message..."
+            />
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </footer>
+    </div>
+    <script>
+      function sendMessage() {
+        var messageInput = document.getElementById("messageInput").value;
+      }
+    </script>
+  </body>
+</html>

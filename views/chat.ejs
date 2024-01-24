@@ -1,0 +1,7 @@
+<div id="chat-container">
+  <% messages.forEach(message => { %> <% if (message.sender === 'user') { %>
+  <div class="user-bubble"><%= message.text %></div>
+  <% } else { %>
+  <div class="robot-bubble"><%= message.text %></div>
+  <% } %> <% }); %>
+</div>
